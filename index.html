@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do List - JS</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="main-container">
@@ -16,16 +16,19 @@
                 <button type="submit" id="add"><i class="fa fa-plus"></i></button>
             </form>
         </div>
-    </div>
-    <div>
-        <h2>Veja suas tarefas:</h2>
-        <div class="task">
-            <i><i class="fa fa-check"></i>
-            <span class="task-title">Estudar JS</span>
-            <i></i>
+        <div id="tasks-container">
+            <h2>Veja suas tarefas:</h2>
+            <!-- TEMPLATE  -->
+            <div class="task hide">
+                <i class="fa fa-check"></i>
+                <span class="task-title">Título da tarefa</span>
+                <i class="fa fa-trash"></i>
+            </div>
+            <!-- FIM TEMPLATE  -->
+            <p id="empty-task">Não há tarefas cadastradas.</p>
         </div>
     </div>
-
+        
     <script src="js/script.js"></script>
 </body>
 </html>
